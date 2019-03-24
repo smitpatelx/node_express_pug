@@ -1,0 +1,161 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    |   
+    meta(name='description', content='Mona - Model Agency HTML5 Template')
+    |   
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    |   
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    // Title
+    title Mona - Model Agency HTML5 Template
+    // Favicon
+    link(rel='icon', href='./img/core-img/favicon.ico')
+    // Core Stylesheet
+    link(rel='stylesheet', href='/css/main.css')
+  body
+    // Preloader
+    #preloader
+      .wrapper
+        .cssload-loader
+    // ***** Header Area Start *****
+    header.header-area
+      // Main Header Start
+      .main-header-area
+        .classy-nav-container.breakpoint-off
+          // Classy Menu
+          nav#monaNav.classy-navbar.justify-content-between.text-dark
+            // Background Curve
+            //- .bg-curve(style='background-image: url(./img/core-img/curve.png);')
+            .bg-curve(style='background: #0000;')
+            // Logo
+            a.nav-brand.pt-2(href='index.html')
+              //- img.nav-brand-svg(src='./img/core-img/logo.svg', alt='')
+              svg(xmlns='http://www.w3.org/2000/svg', width='87', height='103', viewBox='0 0 87 103')
+                g#logo(transform='translate(-104 -91)')
+                  g#Rectangle_1(data-name='Rectangle 1', transform='translate(104 96)', fill='none', stroke='#000', stroke-width='5')
+                    rect(width='87', height='87', stroke='none')
+                    |                   
+                    rect(x='2.5', y='2.5', width='82', height='82', fill='none')
+                  |                 
+                  text#S(transform='translate(148 165)', font-size='90', font-family='Perpetua-Bold, Perpetua', font-weight='700')
+                    tspan(x='-20.61', y='0') S
+
+            // Navbar Toggler
+            .classy-navbar-toggler
+              span.navbarToggler
+                span
+                span
+                span
+            // Menu
+            .classy-menu
+              // Menu Close Button
+              .classycloseIcon
+                .cross-wrap
+                  span.top
+                  span.bottom
+              // Nav Start
+              .classynav
+                ul#nav
+                  li.current-item
+                    a(href='./index.html') Home
+                  |                 
+                  li
+                    a(href='#') Pages
+                    |                   
+                    ul.dropdown
+                      li
+                        a(href='./index.html') - Home
+                      |                     
+                      li
+                        a(href='./about.html') - About Us
+                      |                     
+                      li
+                        a(href='./projects.html') - Projects
+                      |                     
+                      li
+                        a(href='./models.html') - Models
+                      |                     
+                      li
+                        a(href='./casting.html') - Casting
+                      |                     
+                      li
+                        a(href='./blog.html') - Blog
+                      |                     
+                      li
+                        a(href='./single-blog.html') - Blog Details
+                      |                     
+                      li
+                        a(href='./contact.html') - Contact
+                      |                     
+                      li
+                        a(href='#') - Dropdown
+                        |                       
+                        ul.dropdown
+                          li
+                            a(href='#') - Dropdown Item
+                          |                         
+                          li
+                            a(href='#') - Dropdown Item
+                            |                           
+                            ul.dropdown
+                              li
+                                a(href='#') - Even Dropdown
+                              |                             
+                              li
+                                a(href='#') - Even Dropdown
+                              |                             
+                              li
+                                a(href='#') - Even Dropdown
+                              |                             
+                              li
+                                a(href='#') - Even Dropdown
+                          |                         
+                          li
+                            a(href='#') - Dropdown Item
+                          |                         
+                          li
+                            a(href='#') - Dropdown Item
+                  |                 
+                  li
+                    a(href='./projects.html') Project
+                  |                 
+                  li
+                    a(href='./models.html') Models
+                  |                 
+                  li
+                    a(href='./casting.html') Casting
+                  |                 
+                  li
+                    a(href='#') Blog
+                    |                   
+                    ul.dropdown
+                      li
+                        a(href='./blog.html') - Blog
+                      |                     
+                      li
+                        a(href='./single-blog.html') - Blog Details
+                  |                 
+                  li
+                    a(href='./contact.html') Contact
+                // Search Icon
+                .search-icon(data-toggle='modal', data-target='#searchModal')
+                  i.icon_search
+              // Nav End
+    // ***** Header Area End *****
+    // ***** Top Search Area Start *****
+    .top-search-area
+      // Search Modal
+      #searchModal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+        .modal-dialog.modal-dialog-centered(role='document')
+          .modal-content
+            .modal-body
+              // Close Button
+              button.btn.close-btn(type='button', data-dismiss='modal')
+                i.fa.fa-times
+              // Form
+              form(action='index.html', method='post')
+                input.form-control(type='search', name='top-search-bar', placeholder='Search and hit enter...')
+                |               
+                button(type='submit') Search
