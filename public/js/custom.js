@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('header').css("color","white");
+    $('header').css("color","black");
 
     $(window).on('scroll',function () {
         var scrollTop = $(window).scrollTop();
