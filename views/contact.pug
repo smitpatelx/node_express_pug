@@ -1,6 +1,6 @@
 extend layout
 
-block content
+block content   
     .breadcumb-area.navBar_bg
         .container.h-100
             .row.h-100.align-items-end
@@ -17,7 +17,9 @@ block content
     // ***** Breadcrumb Area End *****
     // ***** Contact Area Start *****
     section.mona-contact-area.section-padding-80-0
-        .container
+        //- .alert.alert-success.justify-content-between(role='alert')
+        //-     | Message Received Successfully
+        .container                     
             .row.align-items-center.justify-content-between
                 // Google Maps
                 .col-12.col-lg-6.col-xl-6
@@ -25,21 +27,30 @@ block content
                         iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17608.104068327913!2d-78.87942214970823!3d43.8963445483422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d51d21ccd37533%3A0xdd8ceff2f844fcbf!2sOshawa%2C+ON!5e0!3m2!1sen!2sca!4v1554165635219!5m2!1sen!2sca', allowfullscreen='')
                 // Contact Form
                 .col-12.col-lg-6.col-xl-5
+                    if successMessage != undefined
+                        .d-flex.justify-content-center.align-items-center(aria-live='polite', aria-atomic='true', style='position: relative;')
+                            // Then put toasts within
+                            .toast(role='alert', aria-live='assertive', aria-atomic='true', data-animation='true', data-autohide='true', data-delay='6000')
+                                .toast-header.bg-success.text-light
+                                    i.fas.fa-info-circle
+                                    strong.mr-auto.pl-2 Success
+                                    button.ml-2.mb-1.close(type='button', data-dismiss='toast', aria-label='Close')
+                                    span(aria-hidden='true') ×
+                                .toast-body
+                                    | #{successMessage}
                     .mona-contact-form.mb-80
                         .contact-heading
                             h2 Contact Us
-                            p
-                                | Lorem ipsum dolor sit amet, consetetur sadipscing esed diam nonumy eirmod tempor invidunt ut labore et dolore magna.
-                        form(action='#', method='post')
+                        form(action='/contact', method='post')
                             .form-group
-                                label(for='fullName') Name:
-                                input#fullName.form-control(type='text', name='full-name')
+                                label(for='name') Name:
+                                input#name.form-control(type='text', name='name')
                             .form-group
-                                label(for='emailId') Email:
-                                input#emailId.form-control(type='email', name='email')
+                                label(for='email') Email:
+                                input#email.form-control(type='email', name='email')
                             .form-group
-                                label(for='resume') Resume:
-                                textarea#resume.form-control(name='message', rows='8', cols='80')
+                                label(for='message') Message:
+                                textarea#message.form-control(name='message', rows='8', cols='80')
                             button.btn.mona-btn.btn-2.mt-15 Contact Us
             .row
                 // Single Contact Card

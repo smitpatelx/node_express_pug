@@ -18,17 +18,49 @@ block content
     // ***** Mona Projects Area Start *****
     section.mona-projects-area.section-padding-80-0.mb-50
         .container
+            if successMessage != undefined
+                .d-flex.justify-content-center.align-items-center.mb-4(aria-live='polite', aria-atomic='true', style='position: relative;')
+                    // Then put toasts within
+                    .toast(role='alert', aria-live='assertive', aria-atomic='true', data-animation='true', data-autohide='true', data-delay='6000')
+                        .toast-header.bg-success.text-light
+                            i.fas.fa-info-circle
+                            strong.mr-auto.pl-2 Success
+                            button.ml-2.mb-1.close(type='button', data-dismiss='toast', aria-label='Close')
+                            span(aria-hidden='true') ×
+                        .toast-body
+                            | #{successMessage}
             .row.mona-portfolio
                 each val in data
                     // Single Projects Item
                     .col-12.col-sm-6.col-lg-3.single_gallery_item.mb-30
                         .single-project-area
-                            img(src=val.src, alt='')
+                            img(src=val.src, alt=val._id)
                             // Hover Content
                             .hover-content.d-flex.align-items-center
                                 .hover-text
-                                    h4 #{val.h4}
-                                    h6 #{val.h6[0]}
-                                    h6 #{val.h6[1]}
-                                    h6 #{val.h6[2]}
+                                    h4 #{val.author}
+                                    h6 #{val.detalis[0]}
+                                    h6 #{val.detalis[1]}
+                                    h6 #{val.detalis[2]}
+    .container.text-center
+        p
+            button.btn.mona-btn.btn-2(type='button', data-toggle='collapse', data-target='#collapseExample', aria-expanded='false', aria-controls='collapseExample')
+                | Create project
+                i.fas.fa-plus.pl-2
+        #collapseExample.collapse
+            .mona-contact-form.mb-80
+                .contact-heading
+                    h3 Give Project Details
+                form(action='/projects', method='post', enctype='multipart/form-data')
+                    .form-group.custom-file.mb-3                     
+                        input#customFile.custom-file-input(type='file', name='file')
+                        label.custom-file-label(for='customFile') Select Image
+                    .form-group
+                        label(for='name') Author:
+                        input#name.form-control(type='text', name='author')
+                    .form-group
+                        label(for='message') Project Details:
+                        textarea#message.form-control(name='details', rows='8', cols='80')
+                    button.btn.mona-btn.btn-2.mt-15 Create
+
                 
