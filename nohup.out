@@ -1,0 +1,106 @@
+[33m[nodemon] 1.18.11[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node /home/smit/projects/pug/bin/www`[39m
+events.js:174
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+Emitted 'error' event at:
+    at lazyFs.read (internal/fs/streams.js:165:12)
+    at FSReqWrap.wrapper [as oncomplete] (fs.js:462:17)
+[0mGET / [36m304 [0m1460.971 ms - -[0m
+[0mGET /css/main.css [36m304 [0m1.807 ms - -[0m
+[0mGET /img/bg-img/11.jpg [32m200 [0m10.678 ms - 50802[0m
+[0mGET /img/bg-img/10.jpg [32m200 [0m12.192 ms - 55799[0m
+[0mGET /img/bg-img/12.jpg [32m200 [0m15.815 ms - 48584[0m
+[0mGET /img/bg-img/16.jpg [32m200 [0m15.233 ms - 65995[0m
+[0mGET /img/bg-img/9.jpg [32m200 [0m7.398 ms - 65962[0m
+[0mGET /js/main.js [36m304 [0m1.673 ms - -[0m
+[0mGET /js/custom.js [36m304 [0m1.552 ms - -[0m
+[0mGET /img/bg-img/17.jpg [32m200 [0m8.660 ms - 113283[0m
+[0mGET /img/bg-img/13.jpg [32m200 [0m4.434 ms - 41011[0m
+[0mGET /img/bg-img/6.jpg [32m200 [0m4.785 ms - 12463[0m
+[0mGET /img/bg-img/14.jpg [32m200 [0m5.186 ms - 40353[0m
+[0mGET /img/bg-img/7.jpg [32m200 [0m4.301 ms - 18157[0m
+[0mGET /img/bg-img/8.jpg [32m200 [0m5.069 ms - 20858[0m
+[0mGET /img/bg-img/3.jpg [32m200 [0m5.071 ms - 147938[0m
+[0mGET /img/bg-img/4.jpg [32m200 [0m3.354 ms - 45430[0m
+[0mGET /img/bg-img/5.jpg [32m200 [0m2.486 ms - 52297[0m
+[0mGET /img/bg-img/1.jpg [32m200 [0m2.385 ms - 53160[0m
+[0mGET /img/bg-img/2.jpg [32m200 [0m1.792 ms - 47691[0m
+[0mGET /fonts/HKGrotesk-Regular.woff2?1d7636f19f707eb472cb383ca3d6c3e4 [32m200 [0m2.351 ms - 28788[0m
+[0mGET /fonts/HKGrotesk-SemiBold.woff2?6dfa86ece5b1edff77c53c511656a016 [32m200 [0m1.427 ms - 28444[0m
+[0mGET /fonts/ElegantIcons.woff?fdd9e757bf61675343dcf55100422b84 [32m200 [0m1.011 ms - 63664[0m
+[0mGET /fonts/HKGrotesk-Medium.woff2?ef1acd65353b394cb528069c8d0ef84a [36m304 [0m0.262 ms - -[0m
+[0mGET /img/core-img/curve.png [36m304 [0m0.478 ms - -[0m
+[0mGET /img/bg-img/18.jpg [36m304 [0m0.440 ms - -[0m
+[0mGET /img/bg-img/19.jpg [36m304 [0m0.952 ms - -[0m
+[0mGET /img/bg-img/20.jpg [36m304 [0m0.704 ms - -[0m
+[0mGET /fonts/classy.ttf?c6dd5e6e6b7590465f1175a6e8953565 [32m200 [0m1.292 ms - 1100[0m
+[0mGET / [36m304 [0m477.323 ms - -[0m
+[0mGET /css/main.css [36m304 [0m0.407 ms - -[0m
+[0mGET /js/main.js [36m304 [0m1.745 ms - -[0m
+[0mGET /js/custom.js [36m304 [0m1.809 ms - -[0m
+[0mGET /img/bg-img/16.jpg [36m304 [0m1.799 ms - -[0m
+[0mGET /img/bg-img/17.jpg [36m304 [0m2.107 ms - -[0m
+[0mGET /img/bg-img/10.jpg [36m304 [0m2.459 ms - -[0m
+[0mGET /img/bg-img/9.jpg [36m304 [0m3.499 ms - -[0m
+[0mGET /img/bg-img/11.jpg [36m304 [0m3.394 ms - -[0m
+[0mGET /img/bg-img/12.jpg [36m304 [0m3.404 ms - -[0m
+[0mGET /img/bg-img/14.jpg [36m304 [0m1.654 ms - -[0m
+[0mGET /img/bg-img/6.jpg [36m304 [0m1.722 ms - -[0m
+[0mGET /img/bg-img/7.jpg [36m304 [0m1.824 ms - -[0m
+[0mGET /img/bg-img/13.jpg [36m304 [0m1.972 ms - -[0m
+[0mGET /img/bg-img/8.jpg [36m304 [0m2.081 ms - -[0m
+[0mGET /img/bg-img/3.jpg [36m304 [0m0.326 ms - -[0m
+[0mGET /img/bg-img/4.jpg [36m304 [0m1.389 ms - -[0m
+[0mGET /img/bg-img/5.jpg [36m304 [0m1.577 ms - -[0m
+[0mGET /img/bg-img/1.jpg [36m304 [0m1.723 ms - -[0m
+[0mGET /img/bg-img/2.jpg [36m304 [0m1.961 ms - -[0m
+[0mGET /img/core-img/curve.png [36m304 [0m0.377 ms - -[0m
+[0mGET /img/bg-img/18.jpg [36m304 [0m0.260 ms - -[0m
+[0mGET /img/bg-img/19.jpg [36m304 [0m0.300 ms - -[0m
+[0mGET /img/bg-img/20.jpg [36m304 [0m0.378 ms - -[0m
+[0mGET /img/bg-img/3.jpg [36m304 [0m0.485 ms - -[0m
+[0mGET /img/bg-img/4.jpg [36m304 [0m0.350 ms - -[0m
+[0mGET /img/bg-img/10.jpg [36m304 [0m0.825 ms - -[0m
+[0mGET /img/bg-img/9.jpg [36m304 [0m0.266 ms - -[0m
+[0mGET /img/bg-img/13.jpg [36m304 [0m0.882 ms - -[0m
+[0mGET /img/bg-img/14.jpg [36m304 [0m0.942 ms - -[0m
+[0mGET /img/bg-img/11.jpg [36m304 [0m1.022 ms - -[0m
+[0mGET /img/bg-img/12.jpg [36m304 [0m0.250 ms - -[0m
+[0mGET /img/bg-img/7.jpg [36m304 [0m0.452 ms - -[0m
+[0mGET /img/bg-img/6.jpg [36m304 [0m0.747 ms - -[0m
+[0mGET /img/bg-img/8.jpg [36m304 [0m0.655 ms - -[0m
+[0mGET / [32m200 [0m329.447 ms - 64033[0m
+[0mGET /js/custom.js [32m200 [0m3.735 ms - 1201[0m
+[0mGET /css/main.css [32m200 [0m6.451 ms - 310644[0m
+[0mGET /js/main.js [32m200 [0m2.462 ms - 368365[0m
+[0mGET /img/bg-img/10.jpg [32m200 [0m3.308 ms - 55799[0m
+[0mGET /img/bg-img/17.jpg [32m200 [0m2.897 ms - 113283[0m
+[0mGET /img/bg-img/16.jpg [32m200 [0m3.822 ms - 65995[0m
+[0mGET /img/bg-img/11.jpg [32m200 [0m4.377 ms - 50802[0m
+[0mGET /img/bg-img/9.jpg [32m200 [0m2.581 ms - 65962[0m
+[0mGET /img/bg-img/12.jpg [32m200 [0m3.849 ms - 48584[0m
+[0mGET /img/bg-img/13.jpg [32m200 [0m6.193 ms - 41011[0m
+[0mGET /img/bg-img/6.jpg [32m200 [0m5.650 ms - 12463[0m
+[0mGET /img/bg-img/14.jpg [32m200 [0m5.823 ms - 40353[0m
+[0mGET /img/bg-img/7.jpg [32m200 [0m3.204 ms - 18157[0m
+[0mGET /img/bg-img/8.jpg [32m200 [0m2.799 ms - 20858[0m
+[0mGET /img/bg-img/3.jpg [32m200 [0m2.949 ms - 147938[0m
+[0mGET /img/bg-img/4.jpg [32m200 [0m3.169 ms - 45430[0m
+[0mGET /img/bg-img/1.jpg [32m200 [0m3.097 ms - 53160[0m
+[0mGET /img/bg-img/2.jpg [32m200 [0m2.904 ms - 47691[0m
+[0mGET /img/bg-img/5.jpg [32m200 [0m3.189 ms - 52297[0m
+[0mGET /img/core-img/curve.png [32m200 [0m1.897 ms - 13575[0m
+[0mGET /img/bg-img/19.jpg [32m200 [0m3.413 ms - 128787[0m
+[0mGET /fonts/HKGrotesk-SemiBold.woff2?6dfa86ece5b1edff77c53c511656a016 [32m200 [0m3.140 ms - 28444[0m
+[0mGET /img/bg-img/18.jpg [32m200 [0m4.408 ms - 147944[0m
+[0mGET /fonts/ElegantIcons.woff?fdd9e757bf61675343dcf55100422b84 [32m200 [0m3.460 ms - 63664[0m
+[0mGET /fonts/HKGrotesk-Regular.woff2?1d7636f19f707eb472cb383ca3d6c3e4 [32m200 [0m2.426 ms - 28788[0m
+[0mGET /img/bg-img/20.jpg [32m200 [0m2.856 ms - 117570[0m
+[0mGET /fonts/HKGrotesk-Medium.woff2?ef1acd65353b394cb528069c8d0ef84a [32m200 [0m1.986 ms - 28660[0m
+[0mGET /fonts/classy.ttf?c6dd5e6e6b7590465f1175a6e8953565 [32m200 [0m1.381 ms - 1100[0m
+[0mGET /img/core-img/favicon.ico [32m200 [0m16.706 ms - 1469[0m
